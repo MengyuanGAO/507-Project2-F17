@@ -136,7 +136,7 @@ print("\n***** PROBLEM 2 *****\n")
 
 class Song(Media):
     def __init__(self, media_info_dict):
-        Media.__init__(self, media_info_dict)
+        super().__init__(media_info_dict)
         self.type = 'songs'
         self.album = media_info_dict['collectionName']
         self.track_number = media_info_dict['trackNumber']
@@ -162,7 +162,7 @@ class Song(Media):
 
 class Movie(Media):
     def __init__(self, media_info_dict):
-        Media.__init__(self, media_info_dict)
+        super().__init__(media_info_dict)
         self.type = 'movies'
         self.rating = media_info_dict['contentAdvisoryRating']
         self.genre = media_info_dict['primaryGenreName']
