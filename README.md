@@ -1,6 +1,4 @@
-# SI 507 F17 - Project 2
-
-### DEADLINE: October 1, 2017, 11:59 PM TO BE SUBMITTED ON CANVAS
+# Python_REST_API_iTunes
 
 ## Basics
 
