@@ -1,39 +1,22 @@
 # Python_REST_API_iTunes
 
-## Basics
+## Overview
 
-We have provided here a few files:
+This project used iTunes Search API to get 
 
-* This README
-* A code file, `si507f17_project2_objects_code.py`
-* A file with tests, `si507f17_project2_objects_tests.py`
+## Implementation 
 
-## Instructions
+1. Define functions to get data from iTunes Search API:
+* params_unique_combination: get the unique url to request data
+* sample_get_cache_itunes_data: request data from iTunes Search API or load existing data.
 
-You should **fork** this repository to your own GitHub account.
+2. Define a class Media, representing any piece of media we can find on iTunes search.
 
-You should then **clone** your fork of the repository, so you have your own copy and can make edits on your own computer.
+3. Define two more different classes, each of which *inherit from* class Media: class Song & class Movie.
 
-You should follow the instructions inside `si507f17_project2_objects_code.py` to edit that code file in order to complete the problems in this project.
+4. Call the functions to request data from iTunes Search API and get a list of media objects, a list of song objects as well as a list of movie objects.
 
-To test whether you have succeeded at completing these problems, you can run the test file: e.g. `python si507f17_project2_objects_tests.py`, and view the test output. 
-
-(**DO NOT** change the names of the code files! That's ery important for grading and for testing.)
-
-As you make changes, you should make commits to your Git repository, and push them to your cloned GitHub repository.
-
-## To submit
-
-1. Commit and push before the deadline (or once you have used any late days you choose to use):
-* The final version of your code file
-* The same test file you had originally (don't make changes to it unless directed by an instructor)
-* All .CSV files you create as a result of running the project
-
-2. Submit **the full URL of your GitHub repository, the clone you make** to the Project 2 assignment on the SI 507 Canvas site. Submitting to the Canvas site before 11:59 PM will make your assignment on time and allow our grading script to work. 
-
-If you submit using (a) late day(s), you should do so by 11:59 PM on whatever day that is.
+5. Store the data into three different csv files.
 
 
-## FYI
 
-You may add additional complication to the code if you choose, so long as you pass the tests! and you may make your own design decisions for these classes you define, as long as you still follow the instructions and come up with the desired test results.
