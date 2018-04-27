@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project used iTunes Search API to get 
+This project used iTunes Search API to get media data from iTunes and stored them into csv files.
 
 ## Implementation 
 
